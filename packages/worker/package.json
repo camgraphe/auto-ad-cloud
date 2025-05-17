@@ -1,0 +1,27 @@
+{
+  "name": "worker",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bullmq": "^4.0.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "ffmpeg-static": "^5.0.0",
+    "whisper.cpp": "*",
+    "openai": "^4.0.0",
+    "elevenlabs": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "eslint": "^8.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}
